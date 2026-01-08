@@ -1,0 +1,305 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2025-08-09T20:09:25+00:00",
+    "name": "VPS by Miku (Premium +)",
+    "author": "miku@example.com",
+    "description": "Premium VPS Egg with interactive setup wizard. Supports Ubuntu/Debian simulation, accurate resource display, and up to 25+ extra ports.\r\nGitHub: https://github.com/electromr/miku",
+    "features": null,
+    "docker_images": {
+        "Quay.io": "quay.io/ydrag0n/pterodactyl-vps-egg:latest",
+        "Docker Hub": "ysdragon/pterodactyl-vps-egg:latest",
+        "GitHub Container Registry": "ghcr.io/ysdragon/pterodactyl-vps-egg:latest"
+    },
+    "file_denylist": [],
+    "startup": ".\/run.sh",
+    "config": {
+        "files": {
+            "vps.config": {
+                "parser": "properties",
+                "find": {
+                    "internalip": "{{server.build.default.ip}}",
+                    "port": "{{server.build.default.port}}",
+                    "port2": "{{server.build.env.port2}}",
+                    "port3": "{{server.build.env.PORT3}}",
+                    "port4": "{{server.build.env.port3}}\",\r\n            \"port5\": \"{{server.build.env.port5}}",
+                    "port6": "{{server.build.env.port6}}",
+                    "port7": "{{server.build.env.port7}}",
+                    "port8": "{{server.build.env.port8}}",
+                    "port9": "{{server.build.env.port9}}",
+                    "port10": "{{server.build.env.port10}}",
+                    "port11": "{{server.build.env.port11}}",
+                    "port12": "{{server.build.env.port12}}",
+                    "port13": "{{server.build.env.port13}}",
+                    "port14": "{{server.build.env.port14}}",
+                    "port15": "{{server.build.env.port15}}",
+                    "port16": "{{server.build.env.port16}}",
+                    "port17": "{{server.build.env.port17}}",
+                    "port18": "{{server.build.env.port18}}",
+                    "port19": "{{server.build.env.port19}}",
+                    "port20": "{{server.build.env.port20}}",
+                    "port21": "{{server.build.env.PORT21}}",
+                    "port22": "{{server.build.env.PORT22}}",
+                    "port23": "{{server.build.env.PORT23}}",
+                    "port24": "{{server.build.env.PORT24}}",
+                    "port25": "{{server.build.env.PORT25}}"
+                }
+            }
+        },
+        "startup": "{\r\n    \"done\": \"Starting\"\r\n}",
+        "logs": "{}",
+        "stop": "exit"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!/bin/bash\r\n\r\ncd /mnt/server/",
+            "container": "quay.io/ydrag0n/pterodactyl-vps-egg",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "PORT 2",
+            "description": "",
+            "env_variable": "port2",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 3",
+            "description": "",
+            "env_variable": "port3",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 4",
+            "description": "",
+            "env_variable": "port4",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 5",
+            "description": "",
+            "env_variable": "port5",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 6",
+            "description": "",
+            "env_variable": "port6",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 7",
+            "description": "",
+            "env_variable": "port7",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 8",
+            "description": "",
+            "env_variable": "port8",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 9",
+            "description": "",
+            "env_variable": "port9",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 10",
+            "description": "",
+            "env_variable": "port10",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 11",
+            "description": "",
+            "env_variable": "port11",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 12",
+            "description": "",
+            "env_variable": "port12",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 13",
+            "description": "",
+            "env_variable": "port13",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 14",
+            "description": "",
+            "env_variable": "port14",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 15",
+            "description": "",
+            "env_variable": "port15",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 16",
+            "description": "",
+            "env_variable": "port16",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 17",
+            "description": "",
+            "env_variable": "port17",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 18",
+            "description": "",
+            "env_variable": "port18",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 19",
+            "description": "",
+            "env_variable": "port19",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 20",
+            "description": "",
+            "env_variable": "port20",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 21",
+            "description": "",
+            "env_variable": "PORT21",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 22",
+            "description": "",
+            "env_variable": "PORT22",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 23",
+            "description": "",
+            "env_variable": "PORT23",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 24",
+            "description": "",
+            "env_variable": "PORT24",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        },
+        {
+            "name": "PORT 25",
+            "description": "",
+            "env_variable": "PORT25",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:5",
+            "field_type": "text"
+        }
+    ]
+}
